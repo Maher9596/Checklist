@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device, initial=scale=1.0"> -->
+        <title>upload</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    </head>
+    <body>
+        <div class="container">           
+            <h1 style="text-align: center;">IMAGE GALLERY</h1>
+            <br><br>
+            <form id="form" enctype="multipart/form-data" method="post">
+                <div class="form-group">
+                    <input type="file" class="form-control" id="image">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Upload</button>
+                </div>
+            </form>
+            <div id="result"></div>
+        </div>
+        <script src="upload.js"></script>
+    </body>
+</html>
