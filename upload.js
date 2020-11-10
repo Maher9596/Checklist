@@ -1,9 +1,10 @@
-var form = document.getElementById("form")
-var parentDiv = document.getElementById("result")
+let form = document.getElementById("form")
+let parentDiv = document.getElementById("result")
+
 form.addEventListener('submit', function(event){
     event.preventDefault()
-    var reader = new FileReader()
-    var name = document.getElementById("image").files[0].name
+    let reader = new FileReader()
+    let name = document.getElementById("image").files[0].name
     reader.addEventListener('load', function(){
         if (this.result && localStorage){
             window.localStorage.setItem(name, this.result)
@@ -18,10 +19,11 @@ form.addEventListener('submit', function(event){
     console.log(name)
 })
 
-function showImages() {
+const showImages = () => {
+
     for (let i = 0; i < window.localStorage.length; i++){
         let res = window.localStorage.getItem(window.localStorage.key(i))
-        var image = new Image()
+        let image = new Image()
         image.src = res;
         parentDiv.appendChild(image)
     }
