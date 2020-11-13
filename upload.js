@@ -1,4 +1,4 @@
-let form = document.getElementById("form")
+const form = document.getElementById("form")
 let parentDiv = document.getElementById("result")
 
 form.addEventListener('submit', function(event){
