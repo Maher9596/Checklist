@@ -1,5 +1,5 @@
 const form = document.getElementById("form")
-let parentDiv = document.getElementById("result")
+const parentDiv = document.getElementById("result")
 
 form.addEventListener('submit', function(event){
     event.preventDefault()
