@@ -1,0 +1,20 @@
+{
+  "name": "checkList",
+  "version": "1.0.0",
+  "description": "# Scope of works",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maher9596/Checklist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maher9596/Checklist/issues"
+  },
+  "homepage": "https://github.com/Maher9596/Checklist#readme"
+}
