@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "showdown": "^1.9.1",
+    "showdown.js": "^1.0.8"
+  }
+}
