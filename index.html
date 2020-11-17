@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Checklist</title>
-        <link rel="stylesheet" href="main.css">
+		<title>MarkDownTextArea</title>
+		<link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" type="text/css" href="https://yarnpkg.com/en/package/normalize.css">
     </head>
     <body>
-        <h1>Welcome valued customer</h1>
-	    <h3>Subtitle</h3>
-	
-	<div>
-		<form>
-			<label for="username">
-				Username
-			</label>
-			<input type="text" id="username" placeholder="Enter your username"/>
-			
-			<label for="password">
-				password
-			</label>
-			<input type="text" id="password" placeholder="Enter your password"/>
-			<button>Login</button>
-        </form>
-        <p>Please contact us on 99999999 for login credentials</p>
-		
-	</div>
+		<div class="main-content">
+			<textarea class="text-editor" spellcheck="true" autocomplete="off" autofocus>
+				## Create your MarkDown
+			</textarea>
+			<div class="preview"></div>
+		</div> 
         <script src="main.js"></script>
     </body>
 </html>
