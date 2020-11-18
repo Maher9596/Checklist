@@ -9,5 +9,5 @@ textEditor.addEventListener("keyup", event => {
 
     const html = converter.makeHtml(value)
 
-    preview.innerHTML = html;   
+    preview.innerHTML = html
 })
