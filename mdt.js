@@ -2,6 +2,7 @@ const textEditor = document.querySelector(".text-editor")
 const preview = document.querySelector(".preview")
 const showdown = require('showdown')
 
+
 const converter = new showdown.Converter()
 
 textEditor.addEventListener("keyup", event => {
@@ -9,5 +10,7 @@ textEditor.addEventListener("keyup", event => {
 
     const html = converter.makeHtml(value)
 
-    preview.innerHTML = html;   
+    preview.innerHTML = html; 
+     
+   preview.style.color = "red"
 })
