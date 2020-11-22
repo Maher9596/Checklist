@@ -2,7 +2,6 @@ const textEditor = document.querySelector(".text-editor")
 const preview = document.querySelector(".preview")
 const showdown = require('showdown')
 
-
 const converter = new showdown.Converter()
 
 textEditor.addEventListener("keyup", event => {
