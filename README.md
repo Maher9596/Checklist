@@ -1,5 +1,11 @@
 # Checklist
 
+## Why we built this?
+
+- To make it easy to share the scope with the client. (No need for gmail, etc)
+- To have a professional platform to communicate with the client with.
+- To learn :D
+
 # Scope of works
 
 ## User Story
