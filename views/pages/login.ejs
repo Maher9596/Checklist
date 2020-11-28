@@ -1,8 +1,40 @@
 <!DOCTYPE html>
-<head>
-    <title>Checklist app</title>
-    <P>This is a change to push/to create a PR</P>
-</head>
-<body>
-    <h1>Hello World!</h1>
-</body>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    </head>
+    <body>
+        <br>
+        <div>
+            <h2 id="title"><strong> Welcome to Checklist</strong> </h2>
+            <hr id="line">
+        </div>
+        <div class="center">
+            <div class="header">
+                 Admin Login
+            </div>
+            <form>
+                <input type="text" placeholder="Email">
+                <i class="far fa-envelope"></i> 
+                <input id="pswrd" type="password" pattern=".{6}" required title="6 characters minimum" placeholder="Password">
+                <i class="fas fa-lock" onclick="show()"></i>
+                <input id="btn" type="submit" value="Sign in">
+                <a href="#">Forgot Password</a>
+            </form>
+        </div>
+        <script>
+            const pswrd = document.getElementById('pswrd')
+            const icon = document.querySelector('.fas')
+            if (pswrd.type === "password") {
+                pswrd.type = "text"
+                pswrd.style.marginTop = "20px"
+                icon.style.color - "#7f2092"
+            }else{
+                pswrd.type = "password"
+                icon.style.color="grey"
+            }
+        </script>
+    </body>
+</html>
+    
