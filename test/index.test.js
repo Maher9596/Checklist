@@ -4,6 +4,18 @@ const express = require('express');
 
 const app = express()
 
+describe('GET /', () => {
+    it('it responds with text/html', (done) => {
+        request(app)
+            .get('/')
+            .expect(200)
+            .end((err, response) => {
+                assert.equal(response.header['content-type'], 'text/html; charset=utf-8');
+                done()
+            })
+    })
+})
+
 describe('GET /login', () => {
     it('it responds with text/html', (done) => {
         request(app)
