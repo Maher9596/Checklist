@@ -1,26 +1,15 @@
 const request = require('supertest');
-const assert = require('assert')
-const express = require('express');
-
-const app = express()
+const chai = require('chai')
+const expect = chai.expect;
+const app = require('../index')
 
 describe('GET /', () => {
-    it('it responds with text/html', (done) => {
-        request(app)
-            .get('/')
-            .expect(200)
-            .end((err, response) => {
-                assert.equal(response.header['content-type'], 'text/html; charset=utf-8');
-                done()
-            })
-    })
     it('it redirects to correct path', (done) => {
         request(app)
             .get('/')
             .expect(200)
-            .expect('Location', '/login')
             .end((err, response) => {
-                assert.equal(response.header['content-type'], 'text/html; charset=utf-8');
+                expect(response.header['location']).to.equal('/login');
                 done()
             })
     })
@@ -32,7 +21,7 @@ describe('GET /login', () => {
             .get('/login')
             .expect(200)
             .end((err, response) => {
-                assert.equal(response.header['content-type'], 'text/html; charset=utf-8');
+                expect(response.header['content-type']).to.equal('text/html; charset=utf-8')
                 done()
             })
     })
