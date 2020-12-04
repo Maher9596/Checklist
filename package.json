@@ -8,6 +8,9 @@
     "lint": "eslint ./",
     "lint-fix": "npm run lint --fix"
   },
+  "husky": {
+    "pre-push": "npm run lint-fix"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Maher9596/Checklist.git"
@@ -27,6 +30,7 @@
     "eslint": "^7.14.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.0",
     "nodemon": "^2.0.6"
   }
 }
