@@ -14,6 +14,16 @@ describe('GET /', () => {
                 done()
             })
     })
+    it('it redirects to correct path', (done) => {
+        request(app)
+            .get('/')
+            .expect(200)
+            .expect('Location', '/login')
+            .end((err, response) => {
+                assert.equal(response.header['content-type'], 'text/html; charset=utf-8');
+                done()
+            })
+    })
 })
 
 describe('GET /login', () => {
