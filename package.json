@@ -4,7 +4,7 @@
   "description": "1. The developer can create a checklist of items to complete on the project\r 2. The developer sends the client a link with a username and password\r 3. The client logs in using the credentials provided, and then can see the checklist\r 4. The checklist gets updated by the developer and the client can verify that the item has been completed.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
