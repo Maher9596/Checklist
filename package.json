@@ -9,7 +9,9 @@
     "lint-fix": "npm run lint --fix"
   },
   "husky": {
-    "pre-push": "npm run lint-fix"
+    "hooks": {
+      "pre-push": "npm run lint-fix"
+    }
   },
   "repository": {
     "type": "git",
