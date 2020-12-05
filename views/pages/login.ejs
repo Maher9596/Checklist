@@ -5,10 +5,9 @@
         <link rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     </head>
     <body>
-        <br>
+        
         <div>
             <h2 id="title"><strong> Welcome to Checklist</strong> </h2>
-            <hr id="line">
         </div>
         <div class="center">
             <div class="header">
@@ -20,18 +19,17 @@
                 <input id="pswrd" type="password" pattern=".{6}" required title="6 characters minimum" placeholder="Password">
                 <i class="fas fa-lock" onclick="show()"></i>
                 <input id="btn" type="submit" value="Sign in">
-                <a href="#">Forgot Password</a>
             </form>
         </div>
         <script>
-            const pswrd = document.getElementById('pswrd')
+            const password = document.getElementById('password')
             const icon = document.querySelector('.fas')
-            if (pswrd.type === "password") {
-                pswrd.type = "text"
-                pswrd.style.marginTop = "20px"
+            if (password.type === "password") {
+                password.type = "text"
+                password.style.marginTop = "20px"
                 icon.style.color - "#7f2092"
             }else{
-                pswrd.type = "password"
+                password.type = "password"
                 icon.style.color="grey"
             }
         </script>
