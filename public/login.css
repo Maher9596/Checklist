@@ -1,8 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  background: -webkit-linear-gradient(303, #9b30ff, #9225a7, #7f2092);
-  background: linear-gradient(147deg, #9b30ff, #9225a7, #7f2092);
+  /* background: -webkit-linear-gradient(303, #9b30ff, #9225a7, #7f2092); */
+  background: -webkit-linear-gradient(303, whitesmoke);
+  /* background: linear-gradient(147deg, #9b30ff, #9225a7, #7f2092); */
+  background: linear-gradient(147deg, white);
   height: 100vh;
   overflow: hidden;
   font-family: "Noto Sans TC", sans-serif;
@@ -79,7 +81,7 @@ form a {
   font-weight: 500;
   font-stretch: expanded;
   text-align: center;
-  color: whitesmoke;
+  color: #6d1c7d;
   font-size: 60px;
   padding-top: 5px;
 }
